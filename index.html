@@ -4,32 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WanderLens | AI-Powered Travel Blog</title>
-    <meta name="description" content="Discover personalized travel recommendations">
-    <!-- Favicon, Fonts, CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <nav>
+            <div class="logo">WanderLens</div>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
                 <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="blog.html">Blog</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="hero">
-            <h1>Your Next Adventure Awaits</h1>
-            <button id="ai-recommendation-btn">Get AI Recommendations</button>
-        </section>
-        <article class="featured-post">
-            <h2>Top Hidden Gems in Europe</h2>
-            <p>Discover off-the-beaten-path locations...</p>
+
+    <section id="hero">
+        <h1>Discover Your Next Adventure</h1>
+        <p>AI-curated travel recommendations based on your preferences</p>
+        <button id="ai-recommendation-btn">Get AI Recommendation</button>
+        <button onclick="savePreferences()">Set Travel Preferences</button>
+    </section>
+
+    <section class="featured-posts">
+        <article>
+            <h2>Top 5 Beaches in Bali</h2>
+            <p>Discover the most breathtaking coastal views...</p>
         </article>
-    </main>
+        <article>
+            <h2>Hidden Gems of Kyoto</h2>
+            <p>Ancient temples beyond the tourist trails...</p>
+        </article>
+    </section>
+
     <footer>
-        <p>&copy; 2025 WanderLens</p>
+        <p>&copy; 2025 WanderLens Travel Blog</p>
     </footer>
-    <script src="app.js"></script>
+
+    <script src="js/app.js"></script>
 </body>
 </html>

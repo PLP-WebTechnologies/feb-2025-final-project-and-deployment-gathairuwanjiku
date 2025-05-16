@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -48,3 +49,109 @@ form input, form textarea, form button {
   padding: 0.5rem;
   font-size: 1rem;
 }
+=======
+:root {
+    --primary: #2d5d8c;
+    --secondary: #59a4b2;
+    --accent: #ff9a3c;
+    --light: #f5f5f5;
+    --dark: #333;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --light: #1a1a1a;
+        --dark: #f0f0f0;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light);
+    color: var(--dark);
+    transition: all 0.3s ease;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: var(--primary);
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+#hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('../images/hero-bg.jpg');
+    background-size: cover;
+    color: white;
+    padding: 4rem;
+    text-align: center;
+    min-height: 300px;
+}
+
+button {
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin: 0.5rem;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.featured-posts {
+    display: grid;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary);
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    #hero {
+        padding: 2rem 1rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .featured-posts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .featured-posts {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+>>>>>>> 9270dfad06ad827499acbcefa4bc890364e3c5b0
